@@ -14,3 +14,9 @@ vim.opt.hlsearch = true
 vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
+
+vim.opt.scrolloff = 10
+
+vim.diagnostic.config({
+  virtual_text = false,
+})

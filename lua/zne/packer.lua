@@ -40,4 +40,5 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
   use 'romgrk/barbar.nvim'
   use 'nvim-tree/nvim-tree.lua'
+  use 'akinsho/toggleterm.nvim'
 end)

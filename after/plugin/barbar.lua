@@ -10,3 +10,4 @@ require('barbar').setup({
 
 vim.keymap.set('n', '<leader>t', vim.cmd.BufferNext)
 vim.keymap.set('n', '<leader>T', vim.cmd.BufferPrevious)
+vim.keymap.set('n', '<leader>p', vim.cmd.BufferPick)
