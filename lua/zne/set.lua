@@ -17,6 +17,8 @@ vim.opt.termguicolors = true
 
 vim.opt.scrolloff = 10
 
+vim.opt.cmdheight = 0
+
 vim.diagnostic.config({
   virtual_text = false,
 })

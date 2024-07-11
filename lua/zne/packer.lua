@@ -41,4 +41,8 @@ return require('packer').startup(function(use)
   use 'romgrk/barbar.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'akinsho/toggleterm.nvim'
+
+  use 'lervag/vimtex'
+  use 'm4xshen/autoclose.nvim'
+  use 'nvim-lualine/lualine.nvim'
 end)
