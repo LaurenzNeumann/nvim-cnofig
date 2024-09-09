@@ -45,4 +45,6 @@ return require('packer').startup(function(use)
   use 'lervag/vimtex'
   use 'm4xshen/autoclose.nvim'
   use 'nvim-lualine/lualine.nvim'
+  use 'zbirenbaum/copilot.lua'
+  use { 'zbirenbaum/copilot-cmp'}
 end)

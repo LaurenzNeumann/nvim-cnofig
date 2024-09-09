@@ -8,6 +8,14 @@ lsp_zero.ensure_installed({
 })
 
 local cmp = require('cmp')
+
+cmp.setup({
+    sources = {
+        -- Copilot Source
+        { name = "copilot"},
+    }
+})
+
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 
 lsp_zero.set_preferences({
