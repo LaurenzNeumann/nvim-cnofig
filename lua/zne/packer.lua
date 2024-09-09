@@ -12,39 +12,28 @@ return require('packer').startup(function(use)
       requires = { {'nvim-lua/plenary.nvim'} }
   }
   use {"nvim-treesitter/nvim-treesitter", run=':TSUpdate'} 
-
-  use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v1.x',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},
-		  {'williamboman/mason.nvim'},
-		  {'williamboman/mason-lspconfig.nvim'},
-
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},
-		  {'hrsh7th/cmp-buffer'},
-		  {'hrsh7th/cmp-path'},
-		  {'saadparwaiz1/cmp_luasnip'},
-		  {'hrsh7th/cmp-nvim-lsp'},
-		  {'hrsh7th/cmp-nvim-lua'},
-
-		  -- Snippets
-		  {'L3MON4D3/LuaSnip'},
-		  {'rafamadriz/friendly-snippets'},
-	  }
-  }
+  -- LSP zero setup
+  use{'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'}
+  use{'neovim/nvim-lspconfig'}
+  use{'hrsh7th/nvim-cmp'}
+  use{'hrsh7th/cmp-nvim-lsp'}
+  -- Mason for installing lsps etc.
+  use {'williamboman/mason.nvim'}
+  use {'williamboman/mason-lspconfig.nvim'}
   -- These optional plugins should be loaded directly because of a bug in Packer lazy loading
   use 'nvim-tree/nvim-web-devicons' -- OPTIONAL: for file icons
   use 'lewis6991/gitsigns.nvim' -- OPTIONAL: for git status
+
   use 'romgrk/barbar.nvim'
   use 'nvim-tree/nvim-tree.lua'
   use 'akinsho/toggleterm.nvim'
-
   use 'lervag/vimtex'
+
   use 'm4xshen/autoclose.nvim'
   use 'nvim-lualine/lualine.nvim'
   use 'zbirenbaum/copilot.lua'
-  use { 'zbirenbaum/copilot-cmp'}
+  use { 
+    'zbirenbaum/copilot-cmp',
+    after={'copilot.lua'}
+    }
 end)
