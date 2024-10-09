@@ -13,7 +13,7 @@ return require('packer').startup(function(use)
   }
   use {"nvim-treesitter/nvim-treesitter", run=':TSUpdate'} 
   -- LSP zero setup
-  use{'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'}
+  use{'VonHeikemen/lsp-zero.nvim', branch = 'v4.x', after={'copilot.lua'}}
   use{'neovim/nvim-lspconfig'}
   use{'hrsh7th/nvim-cmp'}
   use{'hrsh7th/cmp-nvim-lsp'}
