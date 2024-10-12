@@ -9,3 +9,5 @@ end)
 vim.keymap.set('t', '<esc>', [[<C-\><C-n>]])
 vim.keymap.set('t', '<C-p>', [[<C-\><C-n><Cmd>wincmd p<CR>]])
 
+-- for some reason this was disabled after update, maybe something in lsp zero changed 
+vim.keymap.set('n', 'gl', vim.diagnostic.open_float)
