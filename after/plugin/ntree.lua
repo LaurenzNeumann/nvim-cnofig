@@ -7,8 +7,6 @@ require("nvim-tree").setup({
   },
   renderer = {
     group_empty = true,
-  },
-  filters = {
-    dotfiles = true,
+    indent_width=1,
   },
 })

@@ -5,9 +5,6 @@ require('barbar').setup({
    sidebar_filetypes = {
         NvimTree = true
    },
-   letters = 'asdfjkl;ghnmxcvbyiowerutzqpASDFJKLGHNMXCVBYIOWERUTZQP'
+   letters = 'asdfjklghnmxcvbyiowerutzqpASDFJKLGHNMXCVBYIOWERUTZQP'
 })
 
-vim.keymap.set('n', '<leader>t', vim.cmd.BufferNext)
-vim.keymap.set('n', '<leader>T', vim.cmd.BufferPrevious)
-vim.keymap.set('n', '<leader>pt', vim.cmd.BufferPick)

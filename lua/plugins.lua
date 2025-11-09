@@ -9,8 +9,6 @@ return {
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
     "nvim-treesitter/nvim-treesitter", 
-    -- LSP zero setup
-    {'VonHeikemen/lsp-zero.nvim', branch = 'v4.x'},
     'neovim/nvim-lspconfig',
     'hrsh7th/nvim-cmp',
     'hrsh7th/cmp-nvim-lsp',
@@ -24,13 +22,13 @@ return {
     'romgrk/barbar.nvim',
     'nvim-tree/nvim-tree.lua',
     'akinsho/toggleterm.nvim',
-    'lervag/vimtex',
+    {
+        'lervag/vimtex',
+        lazy = false
+    },
 
     'm4xshen/autoclose.nvim',
     'nvim-lualine/lualine.nvim',
-    { 
-        'zbirenbaum/copilot-cmp',
-        dependencies={'copilot.lua'}
-    },
-    'zbirenbaum/copilot.lua'
+    'neovim/nvim-lspconfig',
+    'greggh/claude-code.nvim'
 }
