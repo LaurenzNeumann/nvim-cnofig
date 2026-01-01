@@ -20,7 +20,6 @@ return {
     'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
 
     'romgrk/barbar.nvim',
-    'nvim-tree/nvim-tree.lua',
     'akinsho/toggleterm.nvim',
     {
         'lervag/vimtex',
